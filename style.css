@@ -78,7 +78,7 @@ button:hover {
 
 .object {
     position: absolute;
-    width: 80px;
+    width: 8%;
     height: auto;
     image-rendering: pixelated;
     cursor: pointer;
@@ -166,4 +166,15 @@ button:hover {
     margin: 0;
     padding: 4px 8px;
     font-size: 22px;
+}
+
+@media (max-width: 600px) {
+    .room-container {
+        width: 95vw;
+        max-width: none;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
 }
