@@ -1,0 +1,169 @@
+
+body {
+    background-color: #24173b;
+    color: #E9DFCC;
+    font-family: Georgia, serif;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+.screen {
+    padding: 30px;
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    color: #F2C98C;
+}
+
+.birthday {
+    color: #D69A75;
+    margin-top: 30px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    background-color: transparent;
+    border: 1px solid #D69A75;
+    border-radius: 6px;
+
+    color: #F2C98C;
+    font-family: Georgia, serif;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #344365;
+    transform: translateY(-3px);
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.room-container {
+    position: relative;
+    width: 75vw;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.room-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.object {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    image-rendering: pixelated;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.object:hover {
+    transform: scale(1.2);
+}
+
+.mug {
+    left: 33%;
+    top: 48%;
+}
+
+.picture {
+    left: 51%;
+    top: 14%;
+}
+
+.plant {
+    left: 27%;
+    top: 28%;
+}
+
+.radio {
+    left: 78%;
+    top: 39%;
+}
+
+.letter {
+    left: 52%;
+    top: 50%;
+}
+
+.astronaut {
+    left: 57%;
+    top: 37%;
+}
+
+.popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 5, 25, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.popup-content {
+    position: relative;
+    background: #211638;
+    border: 3px solid #E9C98B;
+    border-radius: 0;
+    padding: 18px 24px;
+    width: 85%;
+    max-width: 850px;
+    color: #E9DFCC;
+    box-shadow: 6px 6px 0 #0B0714;
+    font-family: monospace;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.popup-content h2 {
+    color: #F2C98C;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.popup-content p {
+    line-height: 1.8;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    border: none;
+    background: transparent;
+    color: #F2C98C;
+    margin: 0;
+    padding: 4px 8px;
+    font-size: 22px;
+}

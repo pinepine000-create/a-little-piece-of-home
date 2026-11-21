@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Piece of Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="welcome" class="screen">
+        <h1>A little piece of home.</h1>
+
+        <p>
+            So... I wanted to try something. A little different, a little audacious. 
+            But I wasn't exacly sure what... but then I had an idea. What if I made a home.
+            A home that I build with what I have. Love.
+        </p>
+
+        <p class="birthday">♡ Happy birthday ♡</p>
+        <p class="birthday"> My everything </p>
+        <button id="enter-button">Come on in →</button>
+    </main>
+
+    <main id="room" class="screen" hidden>
+        <h1>Make yourself at home.</h1>
+
+        <div class="room-container">
+            <img src="room.png" alt="Our little shared room" class="room-image">
+
+            <img src="objects/mug.png" class="object mug" alt="Mug">
+            <img src="objects/picture.png" class="object picture" alt="Picture">
+            <img src="objects/plant.png" class="object plant" alt="Plant">
+            <img src="objects/radio.png" class="object radio" alt="Radio">
+            <img src="objects/letter.png" class="object letter" alt="Letter">
+            <img src="objects/astronaut.png" class="object astronaut" alt="Astronaut plushie">
+        </div>
+
+        <div id="popup" class="popup" hidden>
+            <div class="popup-content">
+                <button id="close-popup" class="close-button">×</button>
+
+                <h2 id="popup-title">A little note for you ♡</h2>
+
+                <p id="popup-message"></p>  
+
+                <audio id="birthday-song">
+                    <source src="music/next-to-you.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
